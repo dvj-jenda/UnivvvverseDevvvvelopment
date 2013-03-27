@@ -1,0 +1,427 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
+   <PATCH nodename="D:\vvvv_45beta28.1\spacer-patches\Spacer2013-SUN-particles.v4p" systemname="Spacer2013-SUN-particles" filename="D:\vvvv_45beta28.1\spacer-patches\Spacer2013-SUN-particles.v4p">
+   <BOUNDS type="Window" left="3765" top="1515" width="12585" height="8970">
+   </BOUNDS>
+   <NODE systemname="Group (EX9 Priority)" nodename="Group (EX9 Priority)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="5670" top="7680" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer Template Count" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Priority 1" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Priority 3" visible="1" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="36">
+   <BOUNDS type="Node" left="2385" top="195" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2385" top="195" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="100">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="XYresolution">
+   </PIN>
+   </NODE>
+   <NODE systemname="Sphere (DX9)" nodename="Sphere (DX9)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="1455" top="5520" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Resolution X" visible="1">
+   </PIN>
+   <PIN pinname="Resolution Y" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Texture Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Sampler State" visible="1">
+   </PIN>
+   <PIN pinname="Cycles U" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Cycles V" slicecount="1" values="0.5">
+   </PIN>
+   <PIN pinname="Texture Coord Mapping" slicecount="1" values="OnShape_UV">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="35" dstpinname="Resolution Y">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="35" dstpinname="Resolution X">
+   </LINK>
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="34">
+   <BOUNDS type="Node" left="1530" top="2160" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="33">
+   <BOUNDS type="Node" left="1425" top="195" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1425" top="195" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="planetSize">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="34" dstpinname="Z">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="34" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="34" dstpinname="X">
+   </LINK>
+   <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="42">
+   <BOUNDS type="Node" left="1755" top="4845" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Scale XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Center XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Translate XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Rotate XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="XYZ" dstnodeid="42" dstpinname="Scale XYZ">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Transform Out" dstnodeid="35" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="43">
+   <BOUNDS type="Node" left="3585" top="1095" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="44">
+   <BOUNDS type="Node" left="3675" top="240" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3675" top="240" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="translateX">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="45">
+   <BOUNDS type="Node" left="4650" top="270" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4650" top="270" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="translateY">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="46">
+   <BOUNDS type="Node" left="5535" top="330" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5535" top="330" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="translateZ">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="43" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Y Output Value" dstnodeid="43" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="43" dstpinname="Z">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="63" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8130" top="4560" width="1530" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8130" top="4560" width="1530" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="|interakce predmetu|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="64">
+   <BOUNDS type="Node" left="3675" top="8805" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3675" top="8805" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|ex9 out|">
+   </PIN>
+   <PIN pinname="Bin Size" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="43" srcpinname="XYZ" dstnodeid="42" dstpinname="Translate XYZ">
+   </LINK>
+   <NODE systemname="Filter (EX9.SamplerState)" nodename="Filter (EX9.SamplerState)" componentmode="Hidden" id="66">
+   <BOUNDS type="Node" left="8685" top="3210" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Sampler State Out" visible="1">
+   </PIN>
+   <PIN pinname="Magnification Filter" slicecount="1" values="Anisotropic">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="66" srcpinname="Sampler State Out" dstnodeid="35" dstpinname="Sampler State">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="67" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8700" top="2880" width="705" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8700" top="2880" width="705" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="mipMap">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="71">
+   <BOUNDS type="Node" left="6465" top="1200" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="70">
+   <BOUNDS type="Node" left="6555" top="345" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6555" top="345" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="centerX">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="69">
+   <BOUNDS type="Node" left="7530" top="375" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7530" top="375" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="centerY">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="68">
+   <BOUNDS type="Node" left="8415" top="435" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8415" top="435" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="centerZ">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="70" srcpinname="Y Output Value" dstnodeid="71" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="69" srcpinname="Y Output Value" dstnodeid="71" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Y Output Value" dstnodeid="71" dstpinname="Z">
+   </LINK>
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="75">
+   <BOUNDS type="Node" left="9390" top="1260" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="74">
+   <BOUNDS type="Node" left="9480" top="405" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9480" top="405" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="rotateX">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="73">
+   <BOUNDS type="Node" left="10455" top="435" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10455" top="435" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="rotateY">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.351894380559952">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="72">
+   <BOUNDS type="Node" left="11340" top="495" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11340" top="495" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="rotateZ">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="74" srcpinname="Y Output Value" dstnodeid="75" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Y Output Value" dstnodeid="75" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="72" srcpinname="Y Output Value" dstnodeid="75" dstpinname="Z">
+   </LINK>
+   <LINK srcnodeid="71" srcpinname="XYZ" dstnodeid="42" dstpinname="Center XYZ">
+   </LINK>
+   <LINK srcnodeid="75" srcpinname="XYZ" dstnodeid="42" dstpinname="Rotate XYZ">
+   </LINK>
+   <NODE systemname="Spacer2013-file2textureWPreLoader" filename="%VVVV%\spacer-patches\Spacer2013-file2textureWPreLoader.v4p" nodename="%VVVV%\spacer-patches\Spacer2013-file2textureWPreLoader.v4p" componentmode="Hidden" id="80">
+   <BOUNDS type="Node" left="285" top="2760" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7725" top="7170" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="textureDirectory" visible="1" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="textureFileName" visible="1" slicecount="1" encoded="0" values="sun.png">
+   </PIN>
+   <PIN pinname="textureOut" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="81">
+   <BOUNDS type="Node" left="330" top="300" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="330" top="300" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="textureDir">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="81" srcpinname="Output String" dstnodeid="80" dstpinname="textureDirectory">
+   </LINK>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="84">
+   <BOUNDS type="Node" left="10860" top="1515" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10860" top="1515" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="trnasformIN">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="84" srcpinname="Output Node" dstnodeid="42" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Layer" dstnodeid="20" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="80" srcpinname="textureOut" dstnodeid="35" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Layer" dstnodeid="64" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="ParticlesGPU_3d_Dynamic_PosCycle ROOT-spacerEdited" filename="%VVVV%\ParticlesGPU_3d_Dynamic_PosCycle\ParticlesGPU_3d_Dynamic_PosCycle ROOT-spacerEdited.v4p" nodename="%VVVV%\ParticlesGPU_3d_Dynamic_PosCycle\ParticlesGPU_3d_Dynamic_PosCycle ROOT-spacerEdited.v4p" componentmode="Hidden" id="102">
+   <BOUNDS type="Node" left="6405" top="5385" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="dx9 out" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="velikostKouleIN" visible="1">
+   </PIN>
+   <PIN pinname="ex9 out" visible="1">
+   </PIN>
+   <PIN pinname="velikostKoule" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="9825" top="0" width="14175" height="13320">
+   </BOUNDS>
+   <PIN pinname="Update" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="102" dstpinname="velikostKouleIN">
+   </LINK>
+   <NODE systemname="ParticlesGPU_3d_Static_Sprites ROOT---SpacerEdited-SUNcorona" filename="%VVVV%\3d Sprites\ParticlesGPU_3d_Static_Sprites ROOT---SpacerEdited-SUNcorona.v4p" nodename="%VVVV%\3d Sprites\ParticlesGPU_3d_Static_Sprites ROOT---SpacerEdited-SUNcorona.v4p" componentmode="Hidden" id="106">
+   <BOUNDS type="Node" left="6360" top="6645" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="ex9 out" visible="1">
+   </PIN>
+   <PIN pinname="Update" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="106" srcpinname="ex9 out" dstnodeid="20" dstpinname="Layer 3">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="108">
+   <BOUNDS type="Node" left="11595" top="4875" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11595" top="4875" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="updateParticles">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="108" srcpinname="Y Output Value" dstnodeid="106" dstpinname="Update">
+   </LINK>
+   <LINK srcnodeid="102" srcpinname="ex9 out" dstnodeid="20" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="102" dstpinname="planetSize">
+   </LINK>
+   <LINK srcnodeid="108" srcpinname="Y Output Value" dstnodeid="102" dstpinname="Update">
+   </LINK>
+   </PATCH>
