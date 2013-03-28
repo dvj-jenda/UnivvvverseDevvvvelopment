@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="C:\Users\Jenda\Desktop\UnivvvverseDevvvvelopment-master\SPACER\modules\ParticlesGPU_Shader_Library 0.3.2\Sprites\3d Sprites\ParticlesGPU_3d_Static_Sprites ROOT---SpacerCORONA.v4p" systemname="ParticlesGPU_3d_Static_Sprites ROOT---SpacerCORONA" filename="C:\Users\Jenda\Desktop\UnivvvverseDevvvvelopment-master\SPACER\Modules\ParticlesGPU_Shader_Library 0.3.2\Sprites\3d Sprites\ParticlesGPU_3d_Static_Sprites ROOT---SpacerCORONA.v4p">
+   <PATCH nodename="C:\Users\Jenda\Desktop\SPACER\modules\ParticlesGPU_Shader_Library 0.3.2\Sprites\3d Sprites\ParticlesGPU_3d_Static_Sprites ROOT---SpacerCORONA.v4p" systemname="ParticlesGPU_3d_Static_Sprites ROOT---SpacerCORONA" filename="C:\Users\Jenda\Desktop\UnivvvverseDevvvvelopment-master\SPACER\Modules\ParticlesGPU_Shader_Library 0.3.2\Sprites\3d Sprites\ParticlesGPU_3d_Static_Sprites ROOT---SpacerCORONA.v4p">
    <BOUNDS height="11190" left="2700" top="645" type="Window" width="10665">
    </BOUNDS>
    <NODE componentmode="InABox" id="32" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
@@ -468,60 +468,6 @@
    </LINK>
    <LINK dstnodeid="45" dstpinname="Spread Count" srcnodeid="31" srcpinname="Output Real">
    </LINK>
-   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="47" nodename="Keyboard (System Global Legacy)" systemname="Keyboard (System Global Legacy)">
-   <BOUNDS height="100" left="1845" top="10635" type="Node" width="100">
-   </BOUNDS>
-   <BOUNDS height="0" left="1845" top="10635" type="Box" width="0">
-   </BOUNDS>
-   <BOUNDS height="0" left="5730" top="7140" type="Window" width="0">
-   </BOUNDS>
-   <PIN pinname="Keyboard Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="48" nodename="Match (String)" systemname="Match (String)">
-   <BOUNDS height="100" left="1845" top="11040" type="Node" width="100">
-   </BOUNDS>
-   <BOUNDS height="0" left="2130" top="11040" type="Box" width="0">
-   </BOUNDS>
-   <BOUNDS height="0" left="5955" top="8085" type="Window" width="0">
-   </BOUNDS>
-   <PIN pinname="Key Match" slicecount="1" encoded="0" values="q">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Q Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="48" dstpinname="Input" hiddenwhenlocked="1" srcnodeid="47" srcpinname="Keyboard Output">
-   </LINK>
-   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="49" nodename="TogEdge (Animation)" systemname="TogEdge (Animation)">
-   <BOUNDS height="100" left="1845" top="11415" type="Node" width="100">
-   </BOUNDS>
-   <BOUNDS height="0" left="2085" top="11415" type="Box" width="0">
-   </BOUNDS>
-   <BOUNDS height="0" left="5655" top="7995" type="Window" width="0">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Up Edge" visible="1">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="49" dstpinname="Input" hiddenwhenlocked="1" srcnodeid="48" srcpinname="Q Output">
-   </LINK>
-   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="50" nodename="Toggle (Animation)" systemname="Toggle (Animation)">
-   <BOUNDS height="100" left="1845" top="11820" type="Node" width="100">
-   </BOUNDS>
-   <BOUNDS height="0" left="2370" top="11820" type="Box" width="0">
-   </BOUNDS>
-   <BOUNDS height="0" left="5925" top="8565" type="Window" width="0">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="50" dstpinname="Input" hiddenwhenlocked="1" srcnodeid="49" srcpinname="Up Edge">
-   </LINK>
    <INFO author="dottore" description="Sprites Shader Function allows you to improve performances saving mesh calls. basically it draws a square quad on each vertex of the mesh" tags="sprites 3d">
    </INFO>
    <NODE componentmode="InABox" id="51" nodename="IOBox (String)" systemname="IOBox (String)">
@@ -571,7 +517,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.56">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.83">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="52">

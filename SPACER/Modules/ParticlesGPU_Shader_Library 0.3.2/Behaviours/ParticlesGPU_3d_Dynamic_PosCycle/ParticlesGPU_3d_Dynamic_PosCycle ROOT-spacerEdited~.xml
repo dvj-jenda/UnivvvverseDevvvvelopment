@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="C:\Users\Jenda\Desktop\UnivvvverseDevvvvelopment-master\SPACER\modules\ParticlesGPU_Shader_Library 0.3.2\Behaviours\ParticlesGPU_3d_Dynamic_PosCycle\ParticlesGPU_3d_Dynamic_PosCycle ROOT-spacerEdited.v4p" systemname="ParticlesGPU_3d_Dynamic_PosCycle ROOT-spacerEdited" filename="D:\vvvv_45beta28.1\ParticlesGPU_Shader_Library 0.3.2\Behaviours\ParticlesGPU_3d_Dynamic_PosCycle\ParticlesGPU_3d_Dynamic_PosCycle ROOT-spacerEdited.v4p">
-   <BOUNDS height="13320" left="9825" top="0" type="Window" width="14175">
+   <PATCH nodename="C:\Users\Jenda\Desktop\SPACER\modules\ParticlesGPU_Shader_Library 0.3.2\Behaviours\ParticlesGPU_3d_Dynamic_PosCycle\ParticlesGPU_3d_Dynamic_PosCycle ROOT-spacerEdited.v4p" systemname="ParticlesGPU_3d_Dynamic_PosCycle ROOT-spacerEdited" filename="D:\vvvv_45beta28.1\ParticlesGPU_Shader_Library 0.3.2\Behaviours\ParticlesGPU_3d_Dynamic_PosCycle\ParticlesGPU_3d_Dynamic_PosCycle ROOT-spacerEdited.v4p">
+   <BOUNDS height="13320" left="3435" top="885" type="Window" width="14190">
    </BOUNDS>
    <NODE componentmode="InABox" id="67" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="120" top="2160" type="Node" width="0">
@@ -341,7 +341,7 @@
    </BOUNDS>
    <PIN pinname="Color Output" visible="1">
    </PIN>
-   <PIN pinname="Color Input" slicecount="1" values="|0.11984,0.14393,0.31373,1.00000|" visible="1">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.11984,0.14393,0.31373,1.00000|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Color">
    </PIN>
@@ -973,7 +973,7 @@
    </BOUNDS>
    <BOUNDS height="0" left="8700" top="9240" type="Window" width="0">
    </BOUNDS>
-   <PIN pinname="XYZ" slicecount="1" values="0.04">
+   <PIN pinname="XYZ" slicecount="1" visible="1" values="0.04">
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -1135,9 +1135,9 @@
    <LINK srcnodeid="207" srcpinname="Layer" dstnodeid="216" dstpinname="Input Node">
    </LINK>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="217">
-   <BOUNDS type="Node" left="9405" top="3990" width="100" height="100">
+   <BOUNDS type="Node" left="11625" top="2835" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" values="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -1145,9 +1145,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="218">
-   <BOUNDS type="Node" left="9435" top="4440" width="100" height="100">
+   <BOUNDS type="Node" left="10605" top="3135" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9435" top="4440" width="795" height="240">
+   <BOUNDS type="Box" left="10605" top="3135" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -1177,11 +1177,11 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="X" slicecount="1" values="0">
+   <PIN pinname="X" slicecount="1" visible="1" values="0">
    </PIN>
-   <PIN pinname="Y" slicecount="1" values="0">
+   <PIN pinname="Y" slicecount="1" visible="1" values="0">
    </PIN>
-   <PIN pinname="Z" slicecount="1" values="0">
+   <PIN pinname="Z" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="220" srcpinname="Transform Out" dstnodeid="207" dstpinname="Texture Transform">
@@ -1202,4 +1202,56 @@
    </NODE>
    <LINK srcnodeid="222" srcpinname="Output" dstnodeid="100" dstpinname="Color Input">
    </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="223">
+   <BOUNDS type="Node" left="4095" top="12720" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4095" top="12720" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.03">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="223" srcpinname="Y Output Value" dstnodeid="209" dstpinname="XYZ">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="224">
+   <BOUNDS type="Node" left="6405" top="11280" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6405" top="11280" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="224" srcpinname="Y Output Value" dstnodeid="220" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="224" srcpinname="Y Output Value" dstnodeid="220" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="224" srcpinname="Y Output Value" dstnodeid="220" dstpinname="Z">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="225">
+   <BOUNDS type="Node" left="11985" top="2475" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11985" top="2475" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="225" srcpinname="Y Output Value" dstnodeid="217" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="226" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="11970" top="2790" width="2085" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11970" top="2790" width="2085" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="|could be some percentage..|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

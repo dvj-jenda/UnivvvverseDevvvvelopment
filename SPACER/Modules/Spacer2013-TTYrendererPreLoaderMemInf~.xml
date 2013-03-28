@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="C:\Users\Jenda\Desktop\SPACER\modules\Spacer2013-TTYrendererPreLoaderMemInf.v4p" systemname="Spacer2013-TTYrendererPreLoaderMemInf" filename="D:\vvvv_45beta28.1\SPACER\Modules\Spacer2013-TTYrendererPreLoaderMemInf.v4p">
+   <PATCH nodename="D:\vvvv_45beta28.1\SPACER\Modules\Spacer2013-TTYrendererPreLoaderMemInf.v4p" systemname="Spacer2013-TTYrendererPreLoaderMemInf" filename="D:\vvvv_45beta28.1\SPACER\Modules\Spacer2013-TTYrendererPreLoaderMemInf.v4p">
    <BOUNDS type="Window" left="7980" top="1815" width="14745" height="11700">
    </BOUNDS>
    <NODE systemname="Preloader (EX9.Texture)" filename="%VVVV%\lib\nodes\modules\EX9.Texture\Preloader (EX9.Texture).v4p" nodename="Preloader (EX9.Texture)" componentmode="Hidden" id="37">
@@ -27,7 +27,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7995" top="5265" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="15360" top="225" width="6240" height="5010">
+   <BOUNDS type="Window" left="0" top="360" width="6240" height="5010">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
