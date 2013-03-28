@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="D:\vvvv_45beta28.1\SPACER\Modules\Spacer2013-constantNode.v4p" systemname="Spacer2013-constantNode" filename="D:\vvvv_45beta28.1\SPACER\Modules\Spacer2013-constantNode.v4p" locked="0">
-   <BOUNDS type="Window" left="3300" top="5640" width="24120" height="12930">
+   <PATCH nodename="C:\Users\Jenda\Desktop\UnivvvverseDevvvvelopment-master\SPACER\modules\Spacer2013-constantNode.v4p" systemname="Spacer2013-constantNode" filename="D:\vvvv_45beta28.1\SPACER\Modules\Spacer2013-constantNode.v4p" locked="0">
+   <BOUNDS type="Window" left="2415" top="495" width="16980" height="11385">
    </BOUNDS>
    <NODE componentmode="InABox" id="5" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="100" left="75" top="135" type="Node" width="100">
@@ -27,7 +27,7 @@
    <NODE systemname="Reader (File)" nodename="Reader (File)" componentmode="Hidden" id="13">
    <BOUNDS type="Node" left="315" top="1110" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Filename" visible="1" slicecount="1" values="file.txt" encoded="0">
+   <PIN pinname="Filename" visible="1" slicecount="1" encoded="0" values="file.txt">
    </PIN>
    <PIN pinname="Content" visible="1">
    </PIN>
@@ -1659,7 +1659,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="read" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="read">
    </PIN>
    </NODE>
    <LINK srcnodeid="203" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Read">

@@ -1,8 +1,8 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="C:\Users\Jenda\Desktop\SPACER\root-windowed.v4p" systemname="root-windowed" filename="D:\vvvv_45beta28.1\SPACER\root-windowed.v4p">
-   <BOUNDS type="Window" left="270" top="375" width="12030" height="12810">
+   <PATCH nodename="C:\Users\Jenda\Desktop\UnivvvverseDevvvvelopment-master\SPACER\root-windowed.v4p" systemname="root-windowed" filename="C:\Users\Jenda\Desktop\UnivvvverseDevvvvelopment-master\SPACER\root-windowed.v4p">
+   <BOUNDS type="Window" left="270" top="375" width="15165" height="12810">
    </BOUNDS>
-   <NODE systemname="Spacer2013-TTYrendererPreLoaderMemInf" filename="%VVVV%\SPACER\modules\Spacer2013-TTYrendererPreLoaderMemInf.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-TTYrendererPreLoaderMemInf.v4p" componentmode="Hidden" id="1">
+   <NODE systemname="Spacer2013-TTYrendererPreLoaderMemInf" filename="modules\Spacer2013-TTYrendererPreLoaderMemInf.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-TTYrendererPreLoaderMemInf.v4p" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="1125" top="19785" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="7980" top="1815" width="14745" height="11700">
@@ -18,7 +18,7 @@
    <PIN pinname="availableTextureMemory" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Spacer2013-file2textureWPreLoader" filename="%VVVV%\SPACER\SubPatches\Spacer2013-file2textureWPreLoader.v4p" nodename="%VVVV%\SPACER\SubPatches\Spacer2013-file2textureWPreLoader.v4p" componentmode="Hidden" id="2">
+   <NODE systemname="Spacer2013-file2textureWPreLoader" filename="modules\Spacer2013-file2textureWPreLoader.v4p" nodename="%VVVV%\SPACER\SubPatches\Spacer2013-file2textureWPreLoader.v4p" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="825" top="3555" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="7725" top="7170" width="9000" height="6000">
@@ -39,7 +39,7 @@
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Input String" visible="1" slicecount="1" encoded="0" values="D:\vvvv_45beta28.1\SPACER\">
+   <PIN pinname="Input String" visible="1" slicecount="1" encoded="0" values="C:\Users\Jenda\Desktop\UnivvvverseDevvvvelopment-master\SPACER">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="sourceDirectory">
    </PIN>
@@ -70,7 +70,7 @@
    </NODE>
    <LINK srcnodeid="1" srcpinname="itemCount" dstnodeid="5" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="Spacer2013-rendererCameraSoftImage" filename="%VVVV%\SPACER\modules\Spacer2013-rendererCameraSoftImage.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-rendererCameraSoftImage.v4p" componentmode="Hidden" id="6">
+   <NODE systemname="Spacer2013-rendererCameraSoftImage" filename="modules\Spacer2013-rendererCameraSoftImage.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-rendererCameraSoftImage.v4p" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="1440" top="21165" width="100" height="100">
    </BOUNDS>
    <PIN pinname="ex9 in" visible="1" slicecount="1" values="||">
@@ -138,7 +138,7 @@
    </NODE>
    <LINK srcnodeid="10" srcpinname="Layer" dstnodeid="1" dstpinname="ex9 in">
    </LINK>
-   <NODE systemname="Spacer2013-Planet-SunLighted" filename="%VVVV%\SPACER\modules\Spacer2013-Planet-SunLighted.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-Planet-SunLighted.v4p" componentmode="Hidden" id="13">
+   <NODE systemname="Spacer2013-Planet-SunLighted" filename="modules\Spacer2013-Planet-SunLighted.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-Planet-SunLighted.v4p" componentmode="Hidden" id="13">
    <BOUNDS type="Node" left="3960" top="5190" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="13875" top="1365" width="13050" height="12555">
@@ -176,7 +176,7 @@
    <PIN pinname="Size" slicecount="1" values="9">
    </PIN>
    </NODE>
-   <NODE systemname="Spacer2013-MoonOrbiter" filename="%VVVV%\SPACER\Effects\Spacer2013-MoonOrbiter.v4p" nodename="%VVVV%\SPACER\Effects\Spacer2013-MoonOrbiter.v4p" componentmode="Hidden" id="16">
+   <NODE systemname="Spacer2013-MoonOrbiter" filename="modules\Spacer2013-MoonOrbiter.v4p" nodename="%VVVV%\SPACER\Effects\Spacer2013-MoonOrbiter.v4p" componentmode="Hidden" id="16">
    <BOUNDS type="Node" left="4395" top="4245" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="4260" top="5550" width="9045" height="7830">
@@ -206,7 +206,7 @@
    <PIN pinname="rotateY-Orbitting" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Spacer2013-file2textureWPreLoader" filename="%VVVV%\SPACER\SubPatches\Spacer2013-file2textureWPreLoader.v4p" nodename="%VVVV%\SPACER\SubPatches\Spacer2013-file2textureWPreLoader.v4p" componentmode="Hidden" id="18">
+   <NODE systemname="Spacer2013-file2textureWPreLoader" filename="modules\Spacer2013-file2textureWPreLoader.v4p" nodename="%VVVV%\SPACER\SubPatches\Spacer2013-file2textureWPreLoader.v4p" componentmode="Hidden" id="18">
    <BOUNDS type="Node" left="4095" top="3855" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="7725" top="7170" width="9000" height="6000">
@@ -234,7 +234,7 @@
    </NODE>
    <LINK srcnodeid="16" srcpinname="transformOUT" dstnodeid="13" dstpinname="transformIN">
    </LINK>
-   <NODE systemname="Spacer2013-PlanetOrbiterWMoon" filename="%VVVV%\SPACER\Effects\Spacer2013-PlanetOrbiterWMoon.v4p" nodename="%VVVV%\SPACER\Effects\Spacer2013-PlanetOrbiterWMoon.v4p" componentmode="Hidden" id="23">
+   <NODE systemname="Spacer2013-PlanetOrbiterWMoon" filename="modules\Spacer2013-PlanetOrbiterWMoon.v4p" nodename="%VVVV%\SPACER\Effects\Spacer2013-PlanetOrbiterWMoon.v4p" componentmode="Hidden" id="23">
    <BOUNDS type="Node" left="240" top="4380" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="12090" top="4155" width="9000" height="6435">
@@ -286,7 +286,7 @@
    </LINK>
    <LINK srcnodeid="29" srcpinname="Output" dstnodeid="23" dstpinname="rotateY-obehSlunce">
    </LINK>
-   <NODE systemname="Spacer2013-Planet-SunLighted" filename="%VVVV%\SPACER\modules\Spacer2013-Planet-SunLighted.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-Planet-SunLighted.v4p" componentmode="Hidden" id="34">
+   <NODE systemname="Spacer2013-Planet-SunLighted" filename="modules\Spacer2013-Planet-SunLighted.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-Planet-SunLighted.v4p" componentmode="Hidden" id="34">
    <BOUNDS type="Node" left="9210" top="8790" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="13875" top="1365" width="13050" height="12555">
@@ -322,7 +322,7 @@
    <PIN pinname="Size" slicecount="1" values="9">
    </PIN>
    </NODE>
-   <NODE systemname="Spacer2013-file2textureWPreLoader" filename="%VVVV%\SPACER\SubPatches\Spacer2013-file2textureWPreLoader.v4p" nodename="%VVVV%\SPACER\SubPatches\Spacer2013-file2textureWPreLoader.v4p" componentmode="Hidden" id="35">
+   <NODE systemname="Spacer2013-file2textureWPreLoader" filename="modules\Spacer2013-file2textureWPreLoader.v4p" nodename="%VVVV%\SPACER\SubPatches\Spacer2013-file2textureWPreLoader.v4p" componentmode="Hidden" id="35">
    <BOUNDS type="Node" left="9645" top="7500" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="7725" top="7170" width="9000" height="6000">
@@ -338,7 +338,7 @@
    </LINK>
    <LINK srcnodeid="35" srcpinname="textureOut" dstnodeid="34" dstpinname="textureIn">
    </LINK>
-   <NODE systemname="spacer2013-planetOrbiter" filename="%VVVV%\SPACER\Effects\spacer2013-planetOrbiter.v4p" nodename="%VVVV%\SPACER\Effects\spacer2013-planetOrbiter.v4p" componentmode="Hidden" id="37">
+   <NODE systemname="spacer2013-planetOrbiter" filename="modules\spacer2013-planetOrbiter.v4p" nodename="%VVVV%\SPACER\Effects\spacer2013-planetOrbiter.v4p" componentmode="Hidden" id="37">
    <BOUNDS type="Node" left="10350" top="8310" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="825" top="645" width="9000" height="6000">
@@ -406,7 +406,7 @@
    </NODE>
    <LINK srcnodeid="41" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Enabled">
    </LINK>
-   <NODE systemname="Spacer2013-Planet-SunLighted" filename="%VVVV%\SPACER\modules\Spacer2013-Planet-SunLighted.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-Planet-SunLighted.v4p" componentmode="Hidden" id="47">
+   <NODE systemname="Spacer2013-Planet-SunLighted" filename="modules\Spacer2013-Planet-SunLighted.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-Planet-SunLighted.v4p" componentmode="Hidden" id="47">
    <BOUNDS type="Node" left="8700" top="5400" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="13875" top="1365" width="13050" height="12555">
@@ -442,7 +442,7 @@
    <PIN pinname="Size" slicecount="1" values="9">
    </PIN>
    </NODE>
-   <NODE systemname="Spacer2013-file2textureWPreLoader" filename="%VVVV%\SPACER\SubPatches\Spacer2013-file2textureWPreLoader.v4p" nodename="%VVVV%\SPACER\SubPatches\Spacer2013-file2textureWPreLoader.v4p" componentmode="Hidden" id="45">
+   <NODE systemname="Spacer2013-file2textureWPreLoader" filename="modules\Spacer2013-file2textureWPreLoader.v4p" nodename="%VVVV%\SPACER\SubPatches\Spacer2013-file2textureWPreLoader.v4p" componentmode="Hidden" id="45">
    <BOUNDS type="Node" left="8820" top="3765" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="6945" top="5730" width="9000" height="6000">
@@ -458,7 +458,7 @@
    </LINK>
    <LINK srcnodeid="45" srcpinname="textureOut" dstnodeid="47" dstpinname="textureIn">
    </LINK>
-   <NODE systemname="spacer2013-planetOrbiter" filename="%VVVV%\SPACER\Effects\spacer2013-planetOrbiter.v4p" nodename="%VVVV%\SPACER\Effects\spacer2013-planetOrbiter.v4p" componentmode="Hidden" id="44">
+   <NODE systemname="spacer2013-planetOrbiter" filename="modules\spacer2013-planetOrbiter.v4p" nodename="%VVVV%\SPACER\Effects\spacer2013-planetOrbiter.v4p" componentmode="Hidden" id="44">
    <BOUNDS type="Node" left="9525" top="4575" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="825" top="645" width="9000" height="6000">
@@ -556,7 +556,7 @@
    </NODE>
    <LINK srcnodeid="54" srcpinname="Status" dstnodeid="56" dstpinname="Input String">
    </LINK>
-   <NODE systemname="Spacer2013-SUN-particles" filename="%VVVV%\SPACER\modules\Spacer2013-SUN-particles.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-SUN-particles.v4p" componentmode="Hidden" id="59">
+   <NODE systemname="Spacer2013-SUN-particles" filename="modules\Spacer2013-SUN-particles.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-SUN-particles.v4p" componentmode="Hidden" id="59">
    <BOUNDS type="Node" left="8910" top="11700" width="100" height="100">
    </BOUNDS>
    <PIN pinname="ex9 out" visible="1">
@@ -569,7 +569,7 @@
    </PIN>
    <PIN pinname="rotateX" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="10530" top="3450" width="12585" height="8970">
+   <BOUNDS type="Window" left="2370" top="3330" width="12585" height="8970">
    </BOUNDS>
    <PIN pinname="textureName" visible="1">
    </PIN>
@@ -626,10 +626,10 @@
    <PIN pinname="Size" slicecount="1" values="10">
    </PIN>
    </NODE>
-   <NODE systemname="Spacer2013-constantNode" filename="%VVVV%\SPACER\modules\Spacer2013-constantNode.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-constantNode.v4p" componentmode="Hidden" id="74">
+   <NODE systemname="Spacer2013-constantNode" filename="modules\Spacer2013-constantNode.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-constantNode.v4p" componentmode="Hidden" id="74">
    <BOUNDS type="Node" left="8625" top="1200" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="3300" top="5640" width="24120" height="12930">
+   <BOUNDS type="Window" left="2415" top="495" width="16980" height="11385">
    </BOUNDS>
    <PIN pinname="default directory" visible="1" slicecount="1" encoded="0" values="..\..\SOUKROME\Spacer2013">
    </PIN>
@@ -637,7 +637,7 @@
    </PIN>
    <PIN pinname="global-vvvvVSkm" visible="1">
    </PIN>
-   <PIN pinname="read" slicecount="1" values="0">
+   <PIN pinname="read" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="77">
@@ -747,7 +747,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7965" top="75" width="1485" height="450">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" encoded="0" values="Data\planets.xml">
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="\Data\planets.xml">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -771,7 +771,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3690" top="1380" width="1485" height="450">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" encoded="0" values="Textures\">
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="\Textures\">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -819,5 +819,25 @@
    <LINK srcnodeid="23" srcpinname="XYZLight" dstnodeid="86" dstpinname="lightDirZ">
    </LINK>
    <LINK srcnodeid="86" srcpinname="ex9 out" dstnodeid="10" dstpinname="Layer 4">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="87">
+   <BOUNDS type="Node" left="9795" top="240" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9795" top="240" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="read">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="87" srcpinname="Y Output Value" dstnodeid="74" dstpinname="read">
    </LINK>
    </PATCH>

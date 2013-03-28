@@ -11,9 +11,9 @@
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   <PIN pinname="View" visible="1">
    </PIN>
-   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   <PIN pinname="Projection" visible="1">
    </PIN>
    <PIN pinname="Backbuffer Height" visible="1">
    </PIN>
@@ -73,9 +73,9 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="Aspect Height" slicecount="1" visible="1" values="9">
+   <PIN pinname="Aspect Height" visible="1">
    </PIN>
-   <PIN pinname="Aspect Width" slicecount="1" visible="1" values="16">
+   <PIN pinname="Aspect Width" visible="1">
    </PIN>
    <PIN pinname="Alignment" slicecount="1" values="FitIn">
    </PIN>
@@ -93,9 +93,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="fullScreen">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="68" srcpinname="Y Output Value" dstnodeid="38" dstpinname="Fullscreen">
