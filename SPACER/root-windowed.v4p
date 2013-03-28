@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="C:\Users\Jenda\Documents\GitHub\UnivvvverseDevvvvelopment\SPACER\root-windowed.v4p" systemname="root-windowed" filename="C:\Users\Jenda\Desktop\UnivvvverseDevvvvelopment-master\SPACER\root-windowed.v4p">
-   <BOUNDS type="Window" left="270" top="375" width="15165" height="12810">
+   <PATCH nodename="C:\Users\Jenda\Desktop\SPACER\root-windowed.v4p" systemname="root-windowed" filename="C:\Users\Jenda\Desktop\UnivvvverseDevvvvelopment-master\SPACER\root-windowed.v4p">
+   <BOUNDS type="Window" left="0" top="0" width="15165" height="12810">
    </BOUNDS>
    <NODE systemname="Spacer2013-TTYrendererPreLoaderMemInf" filename="modules\Spacer2013-TTYrendererPreLoaderMemInf.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-TTYrendererPreLoaderMemInf.v4p" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="1125" top="19785" width="100" height="100">
@@ -39,7 +39,7 @@
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Input String" visible="1" slicecount="1" encoded="0" values="C:\Users\Jenda\Desktop\UnivvvverseDevvvvelopment-master\SPACER">
+   <PIN pinname="Input String" visible="1" slicecount="1" encoded="0" values="C:\Users\Jenda\Documents\GitHub\UnivvvverseDevvvvelopment\SPACER">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="sourceDirectory">
    </PIN>
