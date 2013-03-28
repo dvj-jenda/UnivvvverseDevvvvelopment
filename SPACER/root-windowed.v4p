@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="C:\Users\Jenda\Desktop\UnivvvverseDevvvvelopment-master\SPACER\root-windowed.v4p" systemname="root-windowed" filename="C:\Users\Jenda\Desktop\UnivvvverseDevvvvelopment-master\SPACER\root-windowed.v4p">
+   <PATCH nodename="C:\Users\Jenda\Documents\GitHub\UnivvvverseDevvvvelopment\SPACER\root-windowed.v4p" systemname="root-windowed" filename="C:\Users\Jenda\Desktop\UnivvvverseDevvvvelopment-master\SPACER\root-windowed.v4p">
    <BOUNDS type="Window" left="270" top="375" width="15165" height="12810">
    </BOUNDS>
    <NODE systemname="Spacer2013-TTYrendererPreLoaderMemInf" filename="modules\Spacer2013-TTYrendererPreLoaderMemInf.v4p" nodename="%VVVV%\SPACER\Modules\Spacer2013-TTYrendererPreLoaderMemInf.v4p" componentmode="Hidden" id="1">
@@ -199,7 +199,7 @@
    </PIN>
    <PIN pinname="translateZ-posunStreduRot" visible="1">
    </PIN>
-   <PIN pinname="translateXYZ-orbitCenter" visible="1" slicecount="1" values="40,0,0">
+   <PIN pinname="translateXYZ-orbitCenter" visible="1" slicecount="3" values="40,0,0">
    </PIN>
    <PIN pinname="XYZLight" visible="1">
    </PIN>
@@ -668,8 +668,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <LINK srcnodeid="23" srcpinname="XYZLight" dstnodeid="16" dstpinname="translateXYZ-orbitCenter">
-   </LINK>
    <LINK srcnodeid="34" srcpinname="ex9 out" dstnodeid="10" dstpinname="Layer 3">
    </LINK>
    <LINK srcnodeid="13" srcpinname="ex9 out" dstnodeid="10" dstpinname="Layer 5">
@@ -839,5 +837,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="87" srcpinname="Y Output Value" dstnodeid="74" dstpinname="read">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="XYZposition" dstnodeid="16" dstpinname="translateXYZ-orbitCenter">
    </LINK>
    </PATCH>

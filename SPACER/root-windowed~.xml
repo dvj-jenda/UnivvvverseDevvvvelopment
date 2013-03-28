@@ -833,6 +833,10 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="read">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="87" srcpinname="Y Output Value" dstnodeid="74" dstpinname="read">
    </LINK>
